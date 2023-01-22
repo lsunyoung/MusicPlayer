@@ -17,7 +17,7 @@ class UITableViewController_Main: UITableViewController {
         tableView.dataSource = self
         tableView.rowHeight = 120
         Menu()
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+//        self.navigationItem.leftBarButtonItem = self.editButtonItem
     }
     // 메뉴 생성
     func Menu() {

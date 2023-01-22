@@ -19,6 +19,7 @@
 		29B529BC297980A300EE37DC /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B529BB297980A300EE37DC /* Data.swift */; };
 		29B529BE2979842B00EE37DC /* UITableViewController_Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B529BD2979842B00EE37DC /* UITableViewController_Main.swift */; };
 		29B529C029798E9F00EE37DC /* ViewController_lyrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B529BF29798E9F00EE37DC /* ViewController_lyrics.swift */; };
+		29CDF4EE297CF25200C6DF5B /* TableViewController_favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CDF4ED297CF25200C6DF5B /* TableViewController_favorite.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		29B529BB297980A300EE37DC /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		29B529BD2979842B00EE37DC /* UITableViewController_Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewController_Main.swift; sourceTree = "<group>"; };
 		29B529BF29798E9F00EE37DC /* ViewController_lyrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_lyrics.swift; sourceTree = "<group>"; };
+		29CDF4ED297CF25200C6DF5B /* TableViewController_favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController_favorite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				29B529BD2979842B00EE37DC /* UITableViewController_Main.swift */,
 				29B0706129792BFD00430A1D /* ViewController_Detail.swift */,
 				29B529BF29798E9F00EE37DC /* ViewController_lyrics.swift */,
+				29CDF4ED297CF25200C6DF5B /* TableViewController_favorite.swift */,
 				29B529BB297980A300EE37DC /* Data.swift */,
 				29B0706329792BFD00430A1D /* Main.storyboard */,
 				29B0706629792BFF00430A1D /* Assets.xcassets */,
@@ -273,6 +276,7 @@
 				29B0705E29792BFD00430A1D /* AppDelegate.swift in Sources */,
 				29B0706029792BFD00430A1D /* SceneDelegate.swift in Sources */,
 				29B529BC297980A300EE37DC /* Data.swift in Sources */,
+				29CDF4EE297CF25200C6DF5B /* TableViewController_favorite.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

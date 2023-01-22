@@ -163,10 +163,10 @@ class ViewController_Detail: UIViewController {
         var menuItems: [UIAction] {
             return [
                 UIAction(title: "플레이리스트 추가", image: UIImage(systemName: "line.3.horizontal"), handler: { (_) in
-                    self.performSegue(withIdentifier: "menu_favorite", sender: (Any).self)
+//                    self.performSegue(withIdentifier: "menu_favorite", sender: (Any).self)
                 }),
                 UIAction(title: "좋아요 추가", image: UIImage(systemName: "heart"), handler: { (_) in
-                    self.performSegue(withIdentifier: "menu_favorite", sender: (Any).self)
+//                    self.performSegue(withIdentifier: "menu_favorite", sender: (Any).self)
                 })
             ]
         }
