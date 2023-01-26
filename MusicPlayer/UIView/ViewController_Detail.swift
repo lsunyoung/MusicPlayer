@@ -34,17 +34,20 @@ class ViewController_Detail: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let countries = countries {
-            musicImage.image = UIImage(named: countries.imageName)
-            lblName.text = countries.name
-            lblSinger.text = countries.state
-        }
+        labelname()
         
         musicImage.layer.cornerRadius = 15 //이미지 라운드 처리
         
         self.initializePlayer()
         
         Menu()
+    }
+    func labelname() {
+        if let countries = countries {
+            musicImage.image = UIImage(named: countries.imageName)
+            lblName.text = countries.name
+            lblSinger.text = countries.state
+        }
     }
 
     func initializePlayer() { //플레이어 초기화 메쏘드
@@ -158,7 +161,7 @@ class ViewController_Detail: UIViewController {
             UIApplication.shared.open(url as URL, options: [:], completionHandler: nil)
         }
     }
-    // 메뉴 생성
+    // 버튼 메뉴 생성
     func Menu() {
         var menuItems: [UIAction] {
             return [

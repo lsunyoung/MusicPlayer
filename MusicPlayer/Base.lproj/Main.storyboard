@@ -72,6 +72,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="barButton" destination="XlI-QG-ABa" id="xYh-88-Yx4"/>
+                        <outlet property="searchBar" destination="y9q-Hx-wPM" id="gWb-Tb-hh5"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VE7-8L-8J2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -313,7 +314,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="4qi-Gu-DCk">
                                 <rect key="frame" x="32.333333333333343" y="490" width="328.33333333333326" height="34.333333333333371"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5WR-i6-a2L">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5WR-i6-a2L" customClass="ReiterationButton" customModule="MusicPlayer" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="51.666666666666664" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="repeat" catalog="system">
@@ -333,7 +334,7 @@
                                             <segue destination="CQx-V2-ub8" kind="presentation" identifier="lyrics" id="giK-PA-jUH"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3O-9h-lub">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3O-9h-lub" customClass="ShuffleButton" customModule="MusicPlayer" customModuleProvider="target">
                                         <rect key="frame" x="274.66666666666669" y="0.0" width="53.666666666666686" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="shuffle" catalog="system">
@@ -449,7 +450,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="j6x-xH-fY6"/>
         <segue reference="3Bg-ov-Rco"/>
     </inferredMetricsTieBreakers>
     <resources>

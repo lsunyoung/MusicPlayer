@@ -19,6 +19,8 @@
 		29B529BC297980A300EE37DC /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B529BB297980A300EE37DC /* Data.swift */; };
 		29B529BE2979842B00EE37DC /* UITableViewController_Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B529BD2979842B00EE37DC /* UITableViewController_Main.swift */; };
 		29B529C029798E9F00EE37DC /* ViewController_lyrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29B529BF29798E9F00EE37DC /* ViewController_lyrics.swift */; };
+		29BD56122981736C00B614AC /* ReiterationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BD56112981736C00B614AC /* ReiterationButton.swift */; };
+		29BD5614298173E800B614AC /* ShuffleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BD5613298173E800B614AC /* ShuffleButton.swift */; };
 		29CDF4EE297CF25200C6DF5B /* TableViewController_favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CDF4ED297CF25200C6DF5B /* TableViewController_favorite.swift */; };
 /* End PBXBuildFile section */
 
@@ -56,6 +58,8 @@
 		29B529BB297980A300EE37DC /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		29B529BD2979842B00EE37DC /* UITableViewController_Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewController_Main.swift; sourceTree = "<group>"; };
 		29B529BF29798E9F00EE37DC /* ViewController_lyrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController_lyrics.swift; sourceTree = "<group>"; };
+		29BD56112981736C00B614AC /* ReiterationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReiterationButton.swift; sourceTree = "<group>"; };
+		29BD5613298173E800B614AC /* ShuffleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffleButton.swift; sourceTree = "<group>"; };
 		29CDF4ED297CF25200C6DF5B /* TableViewController_favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController_favorite.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,17 +111,9 @@
 		29B0705C29792BFD00430A1D /* MusicPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				29B0705D29792BFD00430A1D /* AppDelegate.swift */,
-				29B0705F29792BFD00430A1D /* SceneDelegate.swift */,
-				29B529BD2979842B00EE37DC /* UITableViewController_Main.swift */,
-				29B0706129792BFD00430A1D /* ViewController_Detail.swift */,
-				29B529BF29798E9F00EE37DC /* ViewController_lyrics.swift */,
-				29CDF4ED297CF25200C6DF5B /* TableViewController_favorite.swift */,
-				29B529BB297980A300EE37DC /* Data.swift */,
-				29B0706329792BFD00430A1D /* Main.storyboard */,
-				29B0706629792BFF00430A1D /* Assets.xcassets */,
-				29B0706829792BFF00430A1D /* LaunchScreen.storyboard */,
-				29B0706B29792BFF00430A1D /* Info.plist */,
+				29BD56162981750A00B614AC /* Base */,
+				29BD56182981755D00B614AC /* Data */,
+				29BD56192981759200B614AC /* UIView */,
 			);
 			path = MusicPlayer;
 			sourceTree = "<group>";
@@ -137,6 +133,40 @@
 				29B0708029792BFF00430A1D /* MusicPlayerUITestsLaunchTests.swift */,
 			);
 			path = MusicPlayerUITests;
+			sourceTree = "<group>";
+		};
+		29BD56162981750A00B614AC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				29B0705D29792BFD00430A1D /* AppDelegate.swift */,
+				29B0705F29792BFD00430A1D /* SceneDelegate.swift */,
+				29B0706329792BFD00430A1D /* Main.storyboard */,
+				29B0706629792BFF00430A1D /* Assets.xcassets */,
+				29B0706829792BFF00430A1D /* LaunchScreen.storyboard */,
+				29B0706B29792BFF00430A1D /* Info.plist */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		29BD56182981755D00B614AC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				29B529BB297980A300EE37DC /* Data.swift */,
+				29BD56112981736C00B614AC /* ReiterationButton.swift */,
+				29BD5613298173E800B614AC /* ShuffleButton.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		29BD56192981759200B614AC /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				29B529BD2979842B00EE37DC /* UITableViewController_Main.swift */,
+				29B0706129792BFD00430A1D /* ViewController_Detail.swift */,
+				29B529BF29798E9F00EE37DC /* ViewController_lyrics.swift */,
+				29CDF4ED297CF25200C6DF5B /* TableViewController_favorite.swift */,
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +303,9 @@
 				29B529BE2979842B00EE37DC /* UITableViewController_Main.swift in Sources */,
 				29B0706229792BFD00430A1D /* ViewController_Detail.swift in Sources */,
 				29B529C029798E9F00EE37DC /* ViewController_lyrics.swift in Sources */,
+				29BD5614298173E800B614AC /* ShuffleButton.swift in Sources */,
 				29B0705E29792BFD00430A1D /* AppDelegate.swift in Sources */,
+				29BD56122981736C00B614AC /* ReiterationButton.swift in Sources */,
 				29B0706029792BFD00430A1D /* SceneDelegate.swift in Sources */,
 				29B529BC297980A300EE37DC /* Data.swift in Sources */,
 				29CDF4EE297CF25200C6DF5B /* TableViewController_favorite.swift in Sources */,

@@ -10,6 +10,7 @@ import UIKit
 class UITableViewController_Main: UITableViewController {
     
     @IBOutlet weak var barButton: UIBarButtonItem!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,9 +18,16 @@ class UITableViewController_Main: UITableViewController {
         tableView.dataSource = self
         tableView.rowHeight = 120
         Menu()
-//        self.navigationItem.leftBarButtonItem = self.editButtonItem
+        self.tableView.keyboardDismissMode = .onDrag //스크롤 시 키보드 내림
+        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap(sender:)))) //화면 터치 시 키보드 내림
     }
-    // 메뉴 생성
+    @objc func handleTap(sender: UITapGestureRecognizer) { //화면 터치 시 키보드 내림
+        if sender.state == .ended {
+            view.endEditing(true)
+        }
+        sender.cancelsTouchesInView = false
+    }
+    // 네비게이션 아이템 버튼 메뉴 생성
     func Menu() {
         var menuItems: [UIAction] {
             return [
@@ -34,7 +42,7 @@ class UITableViewController_Main: UITableViewController {
         var demoMenu: UIMenu {
             return UIMenu(image: nil, identifier: nil, options: [], children: menuItems)
         }
-        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "", image: UIImage(systemName: "line.horizontal.3.circle"), primaryAction: nil, menu: demoMenu) //네비게이션 아이템 버튼 메뉴
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "", image: UIImage(systemName: "line.horizontal.3.circle"), primaryAction: nil, menu: demoMenu)
         navigationItem.rightBarButtonItem?.tintColor = .darkGray
     }
 
