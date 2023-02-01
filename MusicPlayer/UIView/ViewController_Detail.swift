@@ -42,6 +42,10 @@ class ViewController_Detail: UIViewController {
         
         Menu()
     }
+    
+    @IBAction func actBack(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
     func labelname() {
         if let countries = countries {
             musicImage.image = UIImage(named: countries.imageName)
@@ -216,6 +220,10 @@ extension ViewController_Detail: AVAudioPlayerDelegate {
             if let countries = countries {
                 vc?.lyrics = countries.description
             }
+//            } else if segue.identifier == "ListCell" {
+//                vc?.name1 = countries?.name
+//                vc?.state1 = countries?.state
+//            }
         }
     }
 }

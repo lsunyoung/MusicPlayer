@@ -13,7 +13,7 @@
             <objects>
                 <tableViewController id="Xoy-M0-D2C" customClass="UITableViewController_Main" customModule="MusicPlayer" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="stf-Fi-Sxo">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <searchBar key="tableHeaderView" contentMode="redraw" id="y9q-Hx-wPM">
@@ -84,7 +84,7 @@
             <objects>
                 <tableViewController id="iEJ-nL-HfP" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="wFo-TA-efn">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
@@ -114,21 +114,50 @@
             </objects>
             <point key="canvasLocation" x="-205" y="713"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Second Table View Controller-->
         <scene sceneID="BYb-0h-1ce">
             <objects>
-                <tableViewController id="3cn-WK-p4C" sceneMemberID="viewController">
+                <tableViewController id="3cn-WK-p4C" customClass="SecondTableViewController" customModule="MusicPlayer" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Yal-Fv-qWY">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="120" id="WyE-Cr-Urj">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="musicCell" rowHeight="120" id="WyE-Cr-Urj">
                                 <rect key="frame" x="0.0" y="50" width="393" height="120"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WyE-Cr-Urj" id="bTW-aF-ML3">
                                     <rect key="frame" x="0.0" y="0.0" width="393" height="120"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tkm-bc-VW6">
+                                            <rect key="frame" x="20" y="10" width="110" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="제목" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4x-6C-cZ7">
+                                            <rect key="frame" x="138" y="32" width="217" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="가수" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5S7-fL-pst">
+                                            <rect key="frame" x="138" y="61" width="217" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" systemColor="opaqueSeparatorColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUm-do-6Hn">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="120"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain"/>
+                                            <connections>
+                                                <action selector="actDetail:" destination="3cn-WK-p4C" eventType="touchUpInside" id="c2V-NK-SYJ"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
                                 </tableViewCellContentView>
                             </tableViewCell>
                         </prototypes>
@@ -141,7 +170,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sfV-Xy-Ngk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="520" y="713"/>
+            <point key="canvasLocation" x="519.84732824427476" y="711.97183098591552"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="YEP-XC-9zE">
@@ -164,11 +193,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController_Detail" customModule="MusicPlayer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="209" translatesAutoresizingMaskIntoConstraints="NO" id="G6b-xf-dVV">
-                                <rect key="frame" x="40" y="572.33333333333337" width="314.66666666666669" height="14.333333333333371"/>
+                                <rect key="frame" x="40" y="616.33333333333337" width="314.66666666666669" height="14.333333333333371"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Jc-Mc-HHo">
                                         <rect key="frame" x="0.0" y="0.0" width="52.666666666666664" height="14.333333333333334"/>
@@ -189,33 +218,33 @@
                                 </subviews>
                             </stackView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="K5n-B4-x2u">
-                                <rect key="frame" x="34.666666666666657" y="539.33333333333337" width="324" height="31"/>
+                                <rect key="frame" x="34.666666666666657" y="583.33333333333337" width="324" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="T2K-3A-AFX"/>
                                     <constraint firstAttribute="height" constant="30" id="uQc-7r-llg"/>
                                 </constraints>
                                 <color key="minimumTrackTintColor" red="1" green="0.81770469430539461" blue="0.95757122963823493" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="maximumTrackTintColor" systemColor="systemGray4Color"/>
-                                <color key="thumbTintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="thumbTintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
                                     <action selector="sliderValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="5fF-e1-xN9"/>
                                 </connections>
                             </slider>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8IV-Ms-cLd">
-                                <rect key="frame" x="36.666666666666657" y="79" width="320" height="320"/>
+                                <rect key="frame" x="36.666666666666657" y="123" width="320" height="320"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="BG4-dw-kds"/>
                                     <constraint firstAttribute="height" constant="320" id="lUg-2l-N4h"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제목" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBg-Ym-ISn">
-                                <rect key="frame" x="179.33333333333334" y="414" width="34.666666666666657" height="24"/>
+                                <rect key="frame" x="179.33333333333334" y="458" width="34.666666666666657" height="24"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="OAQ-4C-Z2B">
-                                <rect key="frame" x="38" y="604.66666666666663" width="317.33333333333331" height="34.333333333333371"/>
+                                <rect key="frame" x="38" y="648.66666666666663" width="317.33333333333331" height="34.333333333333371"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ARw-Sf-rOS">
                                         <rect key="frame" x="0.0" y="0.0" width="49" height="34.333333333333336"/>
@@ -258,13 +287,13 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="가수" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6vb-EV-pkM">
-                                <rect key="frame" x="184.33333333333334" y="443" width="24.333333333333343" height="17"/>
+                                <rect key="frame" x="184.33333333333334" y="487" width="24.333333333333343" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <color key="highlightedColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="81" translatesAutoresizingMaskIntoConstraints="NO" id="H96-3d-bS0">
-                                <rect key="frame" x="40" y="718" width="311" height="34.333333333333371"/>
+                                <rect key="frame" x="40" y="762" width="311" height="34.333333333333371"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FKE-G9-6mh">
                                         <rect key="frame" x="0.0" y="0.0" width="49.666666666666664" height="34.333333333333336"/>
@@ -290,7 +319,7 @@
                                             <color key="baseForegroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <segue destination="Xoy-M0-D2C" kind="presentation" identifier="list" id="3Bg-ov-Rco"/>
+                                            <segue destination="3cn-WK-p4C" kind="presentation" id="tcX-AC-MBF"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -300,7 +329,7 @@
                                 </constraints>
                             </stackView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" minimumValueImage="volume.fill" catalog="system" maximumValueImage="volume.3.fill" translatesAutoresizingMaskIntoConstraints="NO" id="chW-na-cPu">
-                                <rect key="frame" x="38" y="664" width="324" height="30"/>
+                                <rect key="frame" x="38" y="708" width="324" height="30"/>
                                 <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="BqS-SU-uCx"/>
@@ -312,7 +341,7 @@
                                 </connections>
                             </slider>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="4qi-Gu-DCk">
-                                <rect key="frame" x="32.333333333333343" y="490" width="328.33333333333326" height="34.333333333333371"/>
+                                <rect key="frame" x="32.333333333333343" y="534" width="328.33333333333326" height="34.333333333333371"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5WR-i6-a2L" customClass="ReiterationButton" customModule="MusicPlayer" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="51.666666666666664" height="34.333333333333336"/>
@@ -328,7 +357,7 @@
                                             <color key="titleColor" systemColor="systemGray2Color"/>
                                         </state>
                                         <buttonConfiguration key="configuration" style="plain" title="가사보기">
-                                            <color key="baseForegroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="baseForegroundColor" systemColor="linkColor"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <segue destination="CQx-V2-ub8" kind="presentation" identifier="lyrics" id="giK-PA-jUH"/>
@@ -367,7 +396,14 @@
                             <constraint firstItem="cBg-Ym-ISn" firstAttribute="top" secondItem="8IV-Ms-cLd" secondAttribute="bottom" constant="15" id="xyw-He-BJp"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="I3X-LJ-mUf"/>
+                    <navigationItem key="navigationItem" id="I3X-LJ-mUf">
+                        <barButtonItem key="leftBarButtonItem" image="back_small" id="zBI-bm-U8I">
+                            <color key="tintColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="actBack:" destination="BYZ-38-t0r" id="TbO-WN-Xn0"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="facebookButton" destination="nGp-4Z-DNO" id="X8W-uy-dzP"/>
                         <outlet property="kakaoButton" destination="6gX-Wo-MSv" id="v8Q-qh-tJv"/>
@@ -449,12 +485,10 @@
             <point key="canvasLocation" x="1253" y="4"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="3Bg-ov-Rco"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="FaceBook" width="50" height="50"/>
         <image name="SNS1" width="50" height="50.333332061767578"/>
+        <image name="back_small" width="26.666666030883789" height="26.666666030883789"/>
         <image name="backward.end.fill" catalog="system" width="128" height="101"/>
         <image name="backward.fill" catalog="system" width="128" height="77"/>
         <image name="chilkoottrail" width="250" height="250"/>
@@ -469,6 +503,9 @@
         <image name="square.and.arrow.up.circle" catalog="system" width="128" height="123"/>
         <image name="volume.3.fill" catalog="system" width="128" height="84"/>
         <image name="volume.fill" catalog="system" width="128" height="125"/>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

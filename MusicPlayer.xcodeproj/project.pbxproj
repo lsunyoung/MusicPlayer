@@ -22,6 +22,7 @@
 		29BD56122981736C00B614AC /* ReiterationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BD56112981736C00B614AC /* ReiterationButton.swift */; };
 		29BD5614298173E800B614AC /* ShuffleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29BD5613298173E800B614AC /* ShuffleButton.swift */; };
 		29CDF4EE297CF25200C6DF5B /* TableViewController_favorite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29CDF4ED297CF25200C6DF5B /* TableViewController_favorite.swift */; };
+		29FFC338298A51F2002F3012 /* SecondTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FFC337298A51F2002F3012 /* SecondTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		29BD56112981736C00B614AC /* ReiterationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReiterationButton.swift; sourceTree = "<group>"; };
 		29BD5613298173E800B614AC /* ShuffleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShuffleButton.swift; sourceTree = "<group>"; };
 		29CDF4ED297CF25200C6DF5B /* TableViewController_favorite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController_favorite.swift; sourceTree = "<group>"; };
+		29FFC337298A51F2002F3012 /* SecondTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 				29B529BD2979842B00EE37DC /* UITableViewController_Main.swift */,
 				29B0706129792BFD00430A1D /* ViewController_Detail.swift */,
 				29B529BF29798E9F00EE37DC /* ViewController_lyrics.swift */,
+				29FFC337298A51F2002F3012 /* SecondTableViewController.swift */,
 				29CDF4ED297CF25200C6DF5B /* TableViewController_favorite.swift */,
 			);
 			path = UIView;
@@ -307,6 +310,7 @@
 				29B0705E29792BFD00430A1D /* AppDelegate.swift in Sources */,
 				29BD56122981736C00B614AC /* ReiterationButton.swift in Sources */,
 				29B0706029792BFD00430A1D /* SceneDelegate.swift in Sources */,
+				29FFC338298A51F2002F3012 /* SecondTableViewController.swift in Sources */,
 				29B529BC297980A300EE37DC /* Data.swift in Sources */,
 				29CDF4EE297CF25200C6DF5B /* TableViewController_favorite.swift in Sources */,
 			);
